@@ -10,6 +10,7 @@ namespace SG_Bank.UI
     {
         static void Main(string[] args)
         {
+            Menu.Start();
         }
     }
 }

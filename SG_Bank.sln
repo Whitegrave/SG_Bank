@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG_Bank.BLL", "SG_Bank.BLL\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG_Bank.Data", "SG_Bank.Data\SG_Bank.Data.csproj", "{9AE7BA6E-4859-4485-B9A3-82628F41627D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SG_Bank.Tests", "SG_Bank.Tests\SG_Bank.Tests.csproj", "{901FB32E-B1F7-4437-863E-FE3EAD066DA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9AE7BA6E-4859-4485-B9A3-82628F41627D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AE7BA6E-4859-4485-B9A3-82628F41627D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AE7BA6E-4859-4485-B9A3-82628F41627D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{901FB32E-B1F7-4437-863E-FE3EAD066DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{901FB32E-B1F7-4437-863E-FE3EAD066DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{901FB32E-B1F7-4437-863E-FE3EAD066DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{901FB32E-B1F7-4437-863E-FE3EAD066DA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
