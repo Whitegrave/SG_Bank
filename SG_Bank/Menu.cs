@@ -9,6 +9,8 @@ namespace SG_Bank
 {
     public static class Menu
     {
+        public static object DespositWorkflow { get; private set; }
+
         public static void Start()
         {
             while (true)
@@ -28,6 +30,8 @@ namespace SG_Bank
                         lookupWorkflow.Execute();
                         break;
                     case "2":
+                        DepositWorkflow depositWorkflow = new DepositWorkflow();
+                        depositWorkflow.Execute();
                         break;
                     case "3":
                         break;

@@ -43,6 +43,32 @@ namespace SG_Bank
             return result;
         }
 
+        public static decimal GetDecimalFromUser(string prompt, bool allowZero = true, bool allowNegative = true, int maxNegative = -100, int maxPositive = 100, bool ClearLog = false)
+        {
+            string userInput;
+            decimal result;
+            bool inputValid = false;
+            do
+            {
+                if (ClearLog)
+                    Console.Clear();
+
+                // Display the prompt to inform user of desired input
+                Console.Write(prompt);
+                userInput = Console.ReadLine();
+                bool bParsed = decimal.TryParse(userInput, out result);
+                // Validate and proceed to next loop if invalid
+                if (!bParsed || !allowZero && result == 0 || !allowNegative && result < 0 || result < maxNegative || result > maxPositive)
+                {
+                    Console.WriteLine("\nThat is not a valid input.");
+                    continue;
+                }
+                // User input passed all specified criteria
+                inputValid = true;
+            } while (!inputValid);
+            return result;
+        }
+
         public static string GetStringFromUser(string prompt, int minLength = 1, int maxLength = 100, bool allowLettersOnly = true, bool allowSpaces = false, bool allowNumbers = false, bool allowExoticCharacters = false, bool allowEmptyString = false, bool allowOverrideAllowAny = false, bool ClearLog = false)
         {
             string userInput;
