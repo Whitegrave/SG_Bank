@@ -17,7 +17,7 @@ namespace SG_Bank.Tests
         {
             AccountManager manager = AccountManagerFactory.Create();
 
-            AccountLookupResponse response = manager.LookupAccount("x");
+            AccountLookupResponse response = manager.LookupAccount("12345");
 
             Assert.IsNotNull(response.Account);
             Assert.IsTrue(response.Success);

@@ -19,6 +19,9 @@ namespace SG_Bank.Data
         };
         public Account LoadAccount(string AccountNumber)
         {
+            if (AccountNumber != _account.AccountNumber)
+                return null;
+
             return _account;
         }
 
