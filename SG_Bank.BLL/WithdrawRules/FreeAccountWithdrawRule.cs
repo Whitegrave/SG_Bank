@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SG_Bank.BLL.WithdrawRules
 {
-    public class FreeAccountWithdrawlRule : IWithdraw
+    public class FreeAccountWithdrawRule : IWithdraw
     {
         public AccountWithdrawResponse Withdraw(Account account, decimal amount)
         {
