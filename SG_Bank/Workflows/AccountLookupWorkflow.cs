@@ -16,7 +16,11 @@ namespace SG_Bank.Workflows
 
             string accountNumber = ConsoleIO.GetStringFromUser("Lookup an Account\n" +
                                                                "-----------------------------\n\n" +
-                                                               "Enter an account number: ", 1, 10, false, false, true, false, false, false, true);
+                                                               "Default Accounts:\n" +
+                                                               "11111, Free\n" +
+                                                               "22222, Basic\n" +
+                                                               "33333, Premium\n\n" +
+                                                               "Enter an account number: ", 1, 5, false, false, true, false, false, false, true);
             AccountLookupResponse response = manager.LookupAccount(accountNumber);
 
             if (response.Success)

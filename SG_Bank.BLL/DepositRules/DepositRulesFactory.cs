@@ -18,6 +18,8 @@ namespace SG_Bank.BLL.DepositRules
                     return new FreeAccountDepositRule();
                 case AccountType.BASIC:
                     return new NoLimitDepositRule();
+                case AccountType.PREMIUM:
+                    return new NoLimitDepositRule();
 
             }
 

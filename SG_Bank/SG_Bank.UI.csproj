@@ -59,6 +59,10 @@
       <Project>{41dbefd3-f189-44b7-98ad-ccb3dfaed370}</Project>
       <Name>SG_Bank.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SG_Bank.Data\SG_Bank.Data.csproj">
+      <Project>{9AE7BA6E-4859-4485-B9A3-82628F41627D}</Project>
+      <Name>SG_Bank.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SG_Bank.Models\SG_Bank.Models.csproj">
       <Project>{1a5eaf30-2424-4a00-9573-5b996b3b84ef}</Project>
       <Name>SG_Bank.Models</Name>
